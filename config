@@ -1478,7 +1478,8 @@ function changeRank($current){
 	}
 	if(boomAllow(11)){
 		$rank .= '<option value="9" ' . selCurrent($current, 9) . '>' . rankTitle(9) . '</option>';
-		$rank .= '<option value="10" ' . selCurrent($current, 10) . '>' . rankTitle(10) . '</option>';
+	        $rank .= '<option value="10" ' . selCurrent($current, 10) . '>' . rankTitle(10) . '</option>';
+                $rank .= '<option value="11" ' . selCurrent($current, 11) . '>' . rankTitle(11) . '</option>';
 	}
 	return $rank;
 }
