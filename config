@@ -1372,7 +1372,7 @@ function rankTitle($rank){
 		case 10:
 			return $lang['super_admin'];
 		case 11:
-			return $lang['owner'];
+			return $lang['owner'];cpaneluser
 		case 12:
 			return $lang['developer'];
 		case 99:
