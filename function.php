@@ -1373,7 +1373,7 @@ function rankTitle($rank){
 			return $lang['super_admin'];
 		case 11:
 			return $lang['owner'];
-		case 15:
+		case 13:
 			return $lang['developer'];
 		case 99:
 			return $lang['nobody'];
@@ -1435,7 +1435,7 @@ function proRanking($user, $type){
 			case 9:
 			case 10:
 			case 11:
-			case 15:
+			case 13:
 				return proRank($type, rankTitle($user['user_rank']), rankIcon($user['user_rank']));
 			default:
 				return '';
@@ -1464,7 +1464,7 @@ function listRank($current, $req = 0){
 	$rank .= '<option value="9" ' . selCurrent($current, 9) . '>' . rankTitle(9) . '</option>';
 	$rank .= '<option value="10" ' . selCurrent($current, 10) . '>' . rankTitle(10) . '</option>';
 	$rank .= '<option value="11" ' . selCurrent($current, 11) . '>' . rankTitle(11) . '</option>';
-        $rank .= '<option value="15" ' . selCurrent($current, 15) . '>' . rankTitle(12) . '</option>';
+        $rank .= '<option value="15" ' . selCurrent($current, 13) . '>' . rankTitle(13) . '</option>';
         $rank .= '<option value="99" ' . selCurrent($current, 99) . '>' . rankTitle(99) . '</option>';
 	return $rank;
 }
