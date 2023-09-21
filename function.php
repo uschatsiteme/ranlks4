@@ -1464,7 +1464,7 @@ function listRank($current, $req = 0){
 	$rank .= '<option value="9" ' . selCurrent($current, 9) . '>' . rankTitle(9) . '</option>';
 	$rank .= '<option value="10" ' . selCurrent($current, 10) . '>' . rankTitle(10) . '</option>';
 	$rank .= '<option value="11" ' . selCurrent($current, 11) . '>' . rankTitle(11) . '</option>';
-        $rank .= '<option value="15" ' . selCurrent($current, 13) . '>' . rankTitle(13) . '</option>';
+        $rank .= '<option value="13" ' . selCurrent($current, 13) . '>' . rankTitle(13) . '</option>';
         $rank .= '<option value="99" ' . selCurrent($current, 99) . '>' . rankTitle(99) . '</option>';
 	return $rank;
 }
