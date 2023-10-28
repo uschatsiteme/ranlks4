@@ -1416,7 +1416,7 @@ function systemRank($rank, $type){
 		case 9:
 		case 10:
 		case 11:
-		case 15:
+		case 13:
 			return curRanking($type, rankTitle($rank), rankIcon($rank));
 		default:
 			return '';
