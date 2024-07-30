@@ -1373,8 +1373,10 @@ function rankTitle($rank){
 			return $lang['super_admin'];
 		case 11:
 			return $lang['owner'];
+		case 12:
+			return $lang['Founder'];
 		case 13:
-			return $lang['developer'];
+		         return $lang['Developer']
 		case 99:
 			return $lang['nobody'];
 		default:
@@ -1416,6 +1418,7 @@ function systemRank($rank, $type){
 		case 9:
 		case 10:
 		case 11:
+		case 12:
 		case 13:
 			return curRanking($type, rankTitle($rank), rankIcon($rank));
 		default:
@@ -1435,6 +1438,7 @@ function proRanking($user, $type){
 			case 9:
 			case 10:
 			case 11:
+			case 12:
 			case 13:
 				return proRank($type, rankTitle($user['user_rank']), rankIcon($user['user_rank']));
 			default:
