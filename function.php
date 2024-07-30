@@ -1365,6 +1365,8 @@ function rankTitle($rank){
 			return $lang['user'];
 		case 2:
 			return $lang['vip'];
+		case 3:
+		         return $lang['Super Vip']
 		case 8:
 			return $lang['mod'];
 		case 9:
@@ -1414,6 +1416,7 @@ function botRank($type){
 function systemRank($rank, $type){
 	switch($rank){
 		case 2:
+		case 3:
 		case 8:
 		case 9:
 		case 10:
@@ -1478,6 +1481,7 @@ function changeRank($current){
 	if(boomAllow($cody['can_rank'])){
 		$rank .= '<option value="1" ' . selCurrent($current, 1) . '>' . rankTitle(1) . '</option>';
 		$rank .= '<option value="2" ' . selCurrent($current, 2) . '>' . rankTitle(2) . '</option>';
+		$rank .=' <option value="3">' . selCurrent($current, 3) . ’>’ . rankTitle(3) .'</option>;'
 		$rank .= '<option value="8" ' . selCurrent($current, 8) . '>' . rankTitle(8) . '</option>';
 	}
 	if(boomAllow(11)){
